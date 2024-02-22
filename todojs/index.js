@@ -40,9 +40,9 @@ function todotask(task) {
 
     let li = document.createElement("li");
     li.innerText = newItem;
-    if (task && task.checked) {
-        li.classList.add("checked");
-      }
+    // if (task && task.checked) {
+    //     li.classList.add("checked");
+    //   }
    
     let deleteButton = document.createElement("button");
     deleteButton.className = "delete";
@@ -56,7 +56,6 @@ function todotask(task) {
     checkButton.setAttribute("type", "checkbox");
     
     checkButton.className = "check";
-    // editButton.appendChild(document.createTextNode(""));
 
      if (task && task.checked) {
         checkButton.checked = true;
@@ -81,7 +80,9 @@ function todotask(task) {
         saveTodos();
     });
     checkButton.addEventListener('change', (e) => {
-        li.classList.toggle("checked", e.target.checked);
+        // li.classList.toggle("checked", e.target.checked);
+        checkButton.toggleAttribute('checked')
+        console.log(checkButton.checked)
         saveTodos();
     });
 
@@ -95,7 +96,8 @@ function saveTodos() {
     items.querySelectorAll("li").forEach(li => {
         todos.push({
             name:li.childNodes[0].data,
-            checked:li.classList.contains("checked"),
+            // checked:li.classList.contains("checked"),
+            checked: li.childNodes[3].checked,
         });
     });
     localStorage.setItem("todos", JSON.stringify(todos));

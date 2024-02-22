@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  background-color: rgb(132, 69, 184);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+#submit{
+  background-color: rgb(241, 7, 163);
+  outline: none;
+  border: 1px solid white;
+  padding: 5px 13px;
+  color:white;
+}
+h1{
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+ul{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap:1rem;
+ padding: 1rem;
+ background-color: rgb(222, 230, 230);
+ width:50vw;
+ border-radius: 1rem;
+ -webkit-border-radius: 1rem;
+ -moz-border-radius: 1rem;
+ -ms-border-radius: 1rem;
+ -o-border-radius: 1rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+ul li{
+  list-style: none;
+  
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.delete{
+  margin-left:3rem;
+  background-color: red;
+  outline: none;
+  border: 1px solid white;
+  padding: 5px 13px;
+  color:white;
+  
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit{
+  background-color:green;
+  outline: none;
+  border: 1px solid white;
+  padding: 5px 13px;
+  color:white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.check{
+  width:15px;
+  height:15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left:20px;
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.checked{
+  color: darkgray;
+  text-decoration: line-through; 
 }
