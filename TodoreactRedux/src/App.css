@@ -1,0 +1,78 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  background-color: rgb(132, 69, 184);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+#submit{
+  background-color: rgb(241, 7, 163);
+  outline: none;
+  border: 1px solid white;
+  padding: 5px 13px;
+  color:white;
+}
+h1{
+  text-align: center;
+}
+ul{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap:1rem;
+ padding: 1rem;
+ background-color: rgb(222, 230, 230);
+ width:50vw;
+ border-radius: 1rem;
+ -webkit-border-radius: 1rem;
+ -moz-border-radius: 1rem;
+ -ms-border-radius: 1rem;
+ -o-border-radius: 1rem;
+}
+ul li{
+  list-style: none;
+  
+}
+.delete{
+  margin-left:3rem;
+  background-color: red;
+  outline: none;
+  border: 1px solid white;
+  padding: 5px 13px;
+  color:white;
+  
+}
+.edit{
+  background-color:green;
+  outline: none;
+  border: 1px solid white;
+  padding: 5px 13px;
+  color:white;
+}
+.check{
+  width:15px;
+  height:15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left:20px;
+}
+.checked{
+  color: darkgray;
+  text-decoration: line-through; 
+}
